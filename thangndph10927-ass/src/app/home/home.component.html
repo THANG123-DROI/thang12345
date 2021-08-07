@@ -1,0 +1,103 @@
+<div class="header">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="RedStore_Img/images/logo.png" altwidth="125px" >
+      </div>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Product </a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Account</a></li>
+
+      </ul>
+      <img src="RedStore_Img/images/cart.png" width="30px" height="30px">
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h1>Nguyễn Đức Thắng<br> @ Fpt.edu.vn$</h1>
+        <p>
+          HÀ NỘICơ quan chuyên môn đưa ra một số nguyên nhân dẫn<br> đến hiện tượng sụt lún bất thường ở
+          Quảng Bị
+          (Chương Mỹ), trong đó có việc khoan trúng túi khí.
+        </p>
+        <a href="" class="btn">Start Ngay &#8594;</a>
+      </div>
+      <div class="col-2">
+        <img src="RedStore_Img/images/image1.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!--------featured categories--------->
+<div class="categories">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3">
+        <img src="RedStore_Img/images/category-1.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <img src="RedStore_Img/images/category-2.jpg" alt="">
+      </div>
+      <div class="col-3">
+        <img src="RedStore_Img/images/category-3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!--------featured product--------->
+<div class="small-container">
+  <h2 class="title">Featrued Product</h2>
+  <div class="row">
+    <div class="col-4">
+      <img src="RedStore_Img/images/product-1.jpg" alt="">
+      <h4>San Pham Rat Ok</h4>
+      <p>30.000d</p>
+    </div>
+    <div class="col-4">
+      <img src="RedStore_Img/images/product-2.jpg" alt="">
+      <h4>San Pham Rat Ok</h4>
+      <p>30.000d</p>
+    </div>
+    <div class="col-4">
+      <img src="RedStore_Img/images/product-3.jpg" alt="">
+      <h4>San Pham Rat Ok</h4>
+      <p>30.000d</p>
+    </div>
+    <div class="col-4">
+      <img src="RedStore_Img/images/product-4.jpg" alt="">
+      <h4>San Pham Rat Ok</h4>
+      <p>30.000d</p>
+    </div>
+  </div>
+  <h2 class="title">Latest Products</h2 >
+  <div class="row" *ngFor = "let item of products">
+    <div class="col-4">
+      <img [src]="item.img" alt="{{item.name}}" alt="">
+      <h4>{{item.name}}</h4>
+      <p>30.000d</p>
+    </div>
+  </div>
+</div>
+<!------offer------>
+<div class="offer">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-2">
+        <img src="RedStore_Img/images/exclusive.png" class="offer-img">
+      </div>
+      <div class="col-2">
+        <p>HÀ NỘICơ quan chuyên môn đưa ra một số nguyên nhân dẫn đến đó là không biết :v
+        </p>
+        <h1>Smart Band 4</h1>
+        <small>
+          HÀ NỘICơ quan chuyên môn đưa ra một số nguyên nhân dẫn<br> đến hiện tượng sụt lún bất thường ở
+          Quảng Bị
+          (Chương Mỹ), trong đó có việc khoan trúng túi khí.
+        </small>
+        <a href="">Buy Now &#8594;</a>
+      </div>
+    </div>
+  </div>
+</div>
